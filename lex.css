@@ -3,14 +3,13 @@
 body, .telephone p {
     font-family: 'Work Sans', Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-weight: 100;
 }
  .navbar a, footer nav, .breadcrumb {
     font-family: 'Kanit', Helvetica, Arial, sans-serif;
     font-weight: 100;
 
 }
-.telephone, .banner, .banner h1, h2, h3, h4, h6, .caption {
+.telephone, .banner, h1, h2, h3, h4, h6, .caption {
     font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
     font-weight: 200;
 }
@@ -159,7 +158,7 @@ h3 {
     padding:3px;
 }
 h6 {
-    font-weight: bold;
+    font-weight: 400;
     margin: 0 0 0.5em;
 }
 p {
@@ -194,7 +193,6 @@ cc, .telephone p.large, p.long {
 }
 .native {
   list-style: url("assets/images/thumbs/plus.svg");
-
   padding-left: 20px;
   list-style-position: outside;
 }
@@ -469,13 +467,11 @@ my-telephone p.large {
                                           /* --- MOBILE and TABLETS --- */
                                             body {
                                                 font-size: 18px;
-                                                color: #000;
-                                            }
-
-                                            footer, .navbar {
+                                                color: #333;
+                                                padding-top: 35px;
                                             }
                                             h1 {
-                                            	font-size: 35px;
+                                            	font-size: 40px;
                                             }
                                             .profile-header h1 {
                                                 color: #009999;
@@ -484,10 +480,11 @@ my-telephone p.large {
                                                 font-size: 18px;
                                             }
                                             h2 {
-                                                font-size: 35px;
+                                                font-size: 45px;
                                             }
                                             h3 {
-                                               font-size: 30px;  
+                                               font-size: 35px;  
+                                               color: #739900;
                                             }
                                             h4 {
                                                font-size: 23px;  
@@ -499,16 +496,13 @@ my-telephone p.large {
                                                 margin: 0;
                                             }
                                             .caption {
-                                                font-size: 21px;
+                                                font-size: 25px;
                                             }
                                             .contactus .col-sm-4.focus.text-center {
                                                 text-align: center;
                                             }
                                             .telephone p.large, my-telephone p.large {
                                                 font-size: 25px;
-                                            }
-
-                                            .telephone p.hours, my-telephone p.hours {
                                             }
                                             .list-inline > li {
                                                 padding: 0;
@@ -540,15 +534,17 @@ my-telephone p.large {
                                             }
                                             span.location {
                                                 font-size: 0.9em;
-                                                color: #aaa;
+                                                color: #999;
                                             }
                                             .profile-header {
                                                 text-align: center;
                                                 padding-top: 50px;
                                             }
                                             .navbar {
-                                                background: transparent;
+                                                background: white;
                                                 border: none;
+                                                height: 35px;
+                                                min-height: 35px;
                                             }
                                             .navbar.noscrollActive.noscroll {
                                                 box-shadow: none;
@@ -578,30 +574,24 @@ my-telephone p.large {
                                             .navbar .navbar-toggle {
                                                 padding: 0 2px 2px;
                                                 margin: 5px 13px 0 0;
-                                                background: transparent;
                                                 background: rgba(255, 255, 255, 0.8);
+                                                border-radius: 0;
                                             }
                                             .navbar .navbar-toggle .icon-bar {
-                                                background: white;
                                                 background: #009999;
                                                 height: 3px;
                                                 margin-top: 4px;
                                                 margin-bottom: 1px;
                                                 width: 23px;
                                             }
-                                            /*
-                                            .navbar.noscrollActive.noscroll  .navbar-toggle {
-                                                background: transparent;
-                                                border: 1px solid white;
-                                            }
-                                            .navbar.noscrollActive.noscroll .navbar-toggle .icon-bar {
-                                                background: white;
-                                            }
-                                            */
                                             .navbar-brand {
                                                 padding: 8px 15px;
-                                                border-radius: 0 0 6px 0;
                                                 height: auto;
+                                                fomt-weight: bold;
+                                                border-radius: 0;
+                                            }                                           
+                                            .navbar.noscroll .navbar-brand:hover {
+                                                border-bottom: 0;
                                             }
                                             /* --- SUBNAV and FOOTER NAV ----------------- */
                                             footer {
@@ -661,7 +651,7 @@ my-telephone p.large {
                                                 padding: 15px;
                                                 border: none;
                                                 border-top: 1px solid #ddd;
-                                                color: #666;
+                                                color: Black;
                                                 background: #f8f8f8;
                                             }
                                             nav > ul:first-child > li:first-child > a {
@@ -750,6 +740,9 @@ my-telephone p.large {
                                                 margin-top: 3rem;
                                                 padding-top: 2rem;
                                                 padding-bottom: 3rem;
+                                            }
+                                            .highlight h3 {
+                                               color: #99cc00;
                                             }
                                             /* --- MOBILE and TABLETS --- */
                                             .focus {
