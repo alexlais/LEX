@@ -459,13 +459,14 @@ my-telephone p.large {
                                             }
                                           /* --- MOBILE and TABLETS --- */
                                             body {
+                                                color: #333;
                                                 font-size: 18px;
                                                 padding-top: 35px;
                                                 -webkit-font-smoothing: subpixel-antialiased;
                                             }
                                             body, .telephone p, button, input, optgroup, select, textarea,
                                             .navbar a, footer nav, .subnav, .breadcrumb {
-                                                font-weight: 300;
+                                                font-weight: 400;
                                             }
                                             /*
                                             .black-links a, .black-links a:focus {
@@ -680,6 +681,7 @@ my-telephone p.large {
                                                 border: none;
                                                 border-top: 1px solid #ddd;
                                                 background: #f8f8f8;
+                                                color: Black;
                                             }
                                             nav > ul:first-child > li:first-child > a {
                                                 border-top: 0;
