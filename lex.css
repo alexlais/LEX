@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400|Kanit:100,200,400|Titillium+Web:200');
+@import url('https://fonts.googleapis.com/css?family=Assistant:300|Exo+2:200,400|Heebo:300|Khula:300|Palanquin:100,400|Work+Sans:200,500|Titillium+Web:200,400');
 
-body, .telephone p {
+body, .telephone p, button, input, optgroup, select, textarea {
     font-family: 'Work Sans', Helvetica, Arial, sans-serif;
-    font-weight: 300;
+    font-weight: 200;
 }
- .navbar a, footer nav, .breadcrumb {
-    font-family: 'Kanit', Helvetica, Arial, sans-serif;
-    font-weight: 100;
-}
+.navbar a, footer nav, .breadcrumb,
 .telephone, .banner, h1, h2, h3, h4, h6, .caption {
     font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
     font-weight: 200;
@@ -15,8 +12,12 @@ body, .telephone p {
 
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) 
 { @media {
-    body, .telephone p { 
+    body { 
         -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+    .navbar.noscroll .navbar-nav > li > a:hover, .navbar.noscroll .navbar-nav > li > a:focus, .noscroll .dropdown-menu > li > a:hover, .noscroll .dropdown-menu > li:hover a, .breadcrumb {
+        font-weight: 600;
     }
 }}
 /* COLORS
@@ -159,6 +160,7 @@ h3 {
 h6 {
     font-weight: 400;
     margin: 0 0 0.5em;
+    font-size: 16px;
 }
 p {
     line-height: 1.5;
@@ -272,7 +274,6 @@ nav.profile-menu li.profile-menu:hover .dropdown-menu {
     background: #009999;
     color: White;
     text-shadow: none;
-    font-weight: 200;
 }
 .navbar.noscroll .navbar-brand:hover {
     background: #009999;
@@ -292,7 +293,6 @@ nav.profile-menu li.profile-menu:hover .dropdown-menu {
 .navbar.noscroll .navbar-right > li > a:last-child, .navbar.noscroll .navbar-right > li > a:last-child:hover, .navbar.noscroll .highlight > li > a:last-child:focus {
     background: rgba(255, 128, 0, 0.6);
     color: White;
-    font-weight: 200;
 }
 .navbar .navbar-right > li > a:last-child:hover, .navbar.noscroll .navbar-right > li.active > a:last-child {
     border-bottom: 0;
@@ -303,13 +303,7 @@ nav.profile-menu li.profile-menu:hover .dropdown-menu {
     background: rgba(255, 128, 0, 1);
 }
 
-/*
-.navbar .navbar-right > li > a:last-child:hover, .navbar.noscroll .navbar-right > li.active > a:last-child {
-    background: #ff8000;
-    color: White;
-    border-bottom: 0;
-}
-*/
+
 
 
 .nav > li.dropdown > a:hover {
@@ -567,6 +561,8 @@ my-telephone p.large {
                                                 border: none;
                                                 height: 35px;
                                                 min-height: 35px;
+                                                box-shadow: 0 0 30px -4px rgba(0,0,0,.3);
+
                                             }
                                             .navbar.noscrollActive.noscroll {
                                                 box-shadow: none;
@@ -577,6 +573,11 @@ my-telephone p.large {
                                             }
                                             .navbar-nav > li > a {
                                                 border-bottom: 1px solid #444;
+                                                font-size: 15px;
+                                            }
+
+                                            .navbar .navbar-right > li > a:last-child {
+                                                border-bottom: 0;
                                             }
                                             .collapse.in {
                                                 background: rgba(50, 50, 50, 1);
@@ -617,7 +618,6 @@ my-telephone p.large {
                                             }
                                             /* --- SUBNAV and FOOTER NAV ----------------- */
                                             footer {
-                                                margin-top: 3rem;
                                                 }
                                             footer .contact {
                                                 padding-top: 15px !important;
@@ -685,10 +685,9 @@ my-telephone p.large {
                                             .subnav a, .subnav a:hover {
                                                 display: block;
                                                 padding: 15px;
-                                                border-top: 1px dotted rgba(255, 128, 0, 0.5);
+                                                border-top: 1px dotted rgba(255, 128, 0, 0.3);
                                                 color: #ff8000; /* ff8000 */
                                                 text-transform: uppercase;
-                                                font-weight: 500;
                                             }
                                             .subnav li:first-child a, .subnav li:first-child a:hover {
                                                 border-top: 0;
@@ -704,7 +703,7 @@ my-telephone p.large {
                                                 background-attachment: scroll !important;
                                             }
                                             .banner.home {
-                                                padding-top: 70px;
+                                                padding-top: 50px;
                                                 padding-bottom: 10px;
                                                 background-image: url("assets/images/BG-home.png");
                                             }
@@ -805,6 +804,7 @@ my-telephone p.large {
                                             /* --- COLUMN VERTICAL gutter --- */
                                             .row > div[class*='col-'], ng-include > div[class*='col-'] {
                                                 padding-top: 2rem;
+                                                padding-bottom: 2rem;
                                             }
                                             .row .row > div {
                                                 padding-top: 0;
@@ -956,7 +956,7 @@ my-telephone p.large {
     my-telephone p.large {
         font-size: 28px;
     }
-    footer, footer h6 {
+    footer {
         font-size: 14px;
     }
 
@@ -1382,7 +1382,7 @@ my-telephone p.large {
         color: #009999;
     }
     .nav > li > a {
-        padding: 10px 15px;
+        padding: 10px;
     }
     .navbar-brand {
         height: auto;
@@ -1391,7 +1391,7 @@ my-telephone p.large {
     .navbar {
         border: 0;
         background: rgba(255,255,255,0.95);
-        box-shadow: 0 0 15px -4px rgba(0,0,0,.3);
+        box-shadow: 0 0 30px -4px rgba(0,0,0,.3);
         transition-duration: 0.5s;
         min-height: 40px;
     }
@@ -1418,6 +1418,8 @@ my-telephone p.large {
     .noscroll a, .navbar.noscroll .navbar-nav > li > a, .noscroll .dropdown-menu > li > a {
         color: white; 
     }
+
+    /* safari fix */
     @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) 
     { @media {
         .noscroll a, .navbar.noscroll .navbar-nav > li > a, .noscroll .dropdown-menu > li > a { 
@@ -1464,7 +1466,7 @@ my-telephone p.large {
     /* --- _FOOTER ------------------- MEDIUM or larger --- */
     footer {
         color: #888;
-        box-shadow: 0 0 15px -4px rgba(0,0,0,.3);
+        box-shadow: 0 0 30px -4px rgba(0,0,0,.3);
     }
     footer p {
         margin: 0;
@@ -1521,6 +1523,7 @@ my-telephone p.large {
         margin-bottom: 5rem;
         padding-top: 0;
         padding-bottom: 0;
+        font-size: 18px;
     }
     footer aside.copyright {
         padding-top: 0.5rem;
@@ -1662,7 +1665,7 @@ my-telephone p.large {
     .nav > li > a {
         padding: 10px;
     }
-    footer, footer h6 {
+    footer {
         font-size: 12px;
     }
     footer nav > ul > li > a, footer nav > ul > li > a:focus {
@@ -1711,7 +1714,7 @@ my-telephone p.large {
 
                 /* --- FONT-SIZE --- LARGE or larger --- */
                 .navbar, .subnav {
-                    font-size: 16px;
+                    font-size: 14px;
                 }
                 .banner h1 {
                 	font-size: 80px;
@@ -1756,6 +1759,9 @@ my-telephone p.large {
             /* === X-LARGE or larger =================================== */
             @media only screen and (min-width : 1201px) {
 
+                .navbar, .subnav {
+                    font-size: 16px;
+                }
                 /* cancel previous clear which was for a 3 column layout */
                 .profile-list .row > div:nth-child(3n+5) {
                     clear: none;
@@ -1767,7 +1773,7 @@ my-telephone p.large {
                 address p {
                     font-size: 0.86em;
                 }
-                footer, footer h6 {
+                footer {
                     font-size: 15px;
                 }
             }
