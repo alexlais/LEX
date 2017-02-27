@@ -158,7 +158,6 @@ h3 {
     padding:3px;
 }
 h6 {
-    font-weight: 400;
     margin: 0 0 0.5em;
     font-size: 16px;
 }
@@ -178,6 +177,9 @@ c {
 cc, .telephone p.large, p.long {
     word-break: keep-all;
     white-space: nowrap;
+}
+strong, section.contactus .field-name, h6 {
+    font-weight: 400;
 }
 .chevron {
     list-style: none;
@@ -408,6 +410,7 @@ my-telephone p.large {
     color: black;
     font-size: 0.8em;
     color: black;
+    line-height: 25px;
 }
 
     .form-group label {
@@ -462,7 +465,7 @@ my-telephone p.large {
                                                 color: #333;
                                                 font-size: 18px;
                                                 padding-top: 35px;
-                                                 font-weight: 300;
+                                                font-weight: 300;
                                                 -webkit-font-smoothing: subpixel-antialiased;
                                             }
                                             button, input, optgroup, select, textarea,
@@ -565,7 +568,6 @@ my-telephone p.large {
                                                 height: 35px;
                                                 min-height: 35px;
                                                 box-shadow: 0 0 30px -4px rgba(0,0,0,.3);
-
                                             }
                                             .navbar.noscrollActive.noscroll {
                                                 box-shadow: none;
@@ -1141,11 +1143,6 @@ my-telephone p.large {
     /* , .col-no-padding + div h2 */
     /* --- --- --- */
 
-    /* smaller text used in locations */
-    .smaller-text  {
-        font-size: 17px;
-        line-height: 1.2;
-    }
     ul.chevron li {
         background-size: 12px 12px;
     }
@@ -1329,7 +1326,6 @@ my-telephone p.large {
         min-width: 50px;
         display: inline-block;
         font-size: 16px;
-        font-weight: bold;
     }
     section.contactus .content p {
         margin-bottom: 3px;
@@ -1669,7 +1665,6 @@ my-telephone p.large {
         padding: 10px;
     }
     footer {
-        font-size: 12px;
     }
     footer nav > ul > li > a, footer nav > ul > li > a:focus {
         font-size: 14px;
