@@ -465,6 +465,8 @@ my-telephone p.large {
                                                 font-size: 18px;
                                                 color: Black;
                                                 padding-top: 35px;
+                                                        -webkit-font-smoothing: subpixel-antialiased;
+
                                             }
                                             .breadcrumb > .active {
                                                 font-size: 18px;
