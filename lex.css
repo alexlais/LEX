@@ -455,6 +455,23 @@ my-telephone p.large {
                                                 margin: 0;
                                                 padding: 0;
                                              }
+                                             section.thefirm img.visible-mobile {
+                                                display: block;
+                                                width: 75px;
+                                                height: 75px;
+                                                margin: 30px auto;
+                                             }
+                                             section.thefirm .mobile-center {
+                                                text-align: center;
+                                             }
+                                             section.thefirm .focus {
+                                                background: transparent;
+                                                margin-top: 0;
+                                             }
+                                             section.thefirm .focus-mobile {
+                                                background: rgba(45, 57, 57, 0.05);
+                                                padding-bottom: 1em;
+                                            }
                                              .credits-content {
                                                 display: none;
                                             }
