@@ -470,6 +470,10 @@ my-telephone p.large {
                                                 color: #333;
                                                 padding-top: 35px;
                                             }
+                                            .breadcrumb > .active {
+                                                font-size: 18px;
+                                                color: #333;
+                                            }
                                             h1 {
                                             	font-size: 40px;
                                             }
@@ -496,7 +500,7 @@ my-telephone p.large {
                                                 margin: 0;
                                             }
                                             .caption {
-                                                font-size: 25px;
+                                                font-size: 23px;
                                             }
                                             .contactus .col-sm-4.focus.text-center {
                                                 text-align: center;
@@ -524,10 +528,21 @@ my-telephone p.large {
                                             }
                                             .profile-list a.image.mobile + h3 {
                                                 padding-top: 10px;
+                                                margin-top: 10px;
                                             }
+                                            .ourteam .profile-list h3 a {
+                                                border-top: 1px solid #999;
+                                                color: #333;
+                                                font-size: 30px;
+                                            }
+                                            .ourteam .profile-list h3 a:hover {
+                                                border-top: 1px solid #00cccc;
+                                                color: #00cccc;
+                                            }
+
                                             .profile-list a.image.mobile img {
-                                                width: 100px;
-                                                height: 100px;
+                                                width: 140px;
+                                                height: 140px;
                                             }
                                             .ourteam .content {
                                                 border-top: 1px solid rgba(0, 0, 0, 0.15);
