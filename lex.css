@@ -639,10 +639,10 @@ my-telephone p.large {
                                                 margin-bottom: 1px;
                                                 width: 23px;
                                             }
-                                            .navbar-brand {
+                                            nav .navbar-brand {
                                                 padding: 8px 15px;
                                                 height: auto;
-                                                fomt-weight: 300;
+                                                font-weight: 600;
                                                 border-radius: 0;
                                             }                                           
                                             .navbar.noscroll .navbar-brand:hover {
