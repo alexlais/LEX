@@ -551,7 +551,12 @@ my-telephone p.large {
                                             }
                                             span.location {
                                                 font-size: 0.9em;
-                                                color: #999;
+                                                color: #666;
+                                            }
+
+                                            .profile-list h3 span {
+                                                font-size: 0.8em;
+                                                color: #666;
                                             }
                                             .profile-header {
                                                 text-align: center;
@@ -757,6 +762,9 @@ my-telephone p.large {
                                                 margin-top: 3rem;
                                                 padding-top: 2rem;
                                                 padding-bottom: 3rem;
+                                            }
+                                            .highlight h2 {
+                                               margin: 0;
                                             }
                                             .highlight h3 {
                                                color: #99cc00;
