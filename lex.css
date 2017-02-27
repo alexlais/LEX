@@ -1222,6 +1222,12 @@ my-telephone p.large {
         margin: -10px 0 0 10px;
         color: #aaa;
     }
+    /* --- _THEFIRM --------- MEDIUM or larger --- */
+    section.thefirm .thumb {
+        width: 100px;
+        height: 100px;
+        margin: 20px 0 50px;
+    }
     /* --- _PRACTICEAREAS --------- MEDIUM or larger --- */
     .practiceareas img {
         padding-top: 2em;
