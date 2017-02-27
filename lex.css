@@ -468,9 +468,13 @@ my-telephone p.large {
                                                         -webkit-font-smoothing: subpixel-antialiased;
 
                                             }
+
+                                            .black-links a, .black-links a:focus {
+                                                color: Black;
+                                            }
                                             .breadcrumb > .active {
                                                 font-size: 18px;
-                                                color: #333;
+                                                color: black;
                                             }
                                             h1 {
                                             	font-size: 40px;
@@ -801,7 +805,7 @@ my-telephone p.large {
                                                 border-bottom: 1px solid rgba(0,0,0,0.1);
                                             }
                                             .disclaimer p {
-                                                font-size: 14px;
+                                                font-size: 16px;
                                             }
                                             /* --- COLUMN VERTICAL gutter --- */
                                             .row > div[class*='col-'], ng-include > div[class*='col-'] {
