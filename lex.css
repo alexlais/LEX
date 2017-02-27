@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Assistant:300|Exo+2:200,400|Heebo:300|Khula:300|Palanquin:100,400|Work+Sans:200,500|Titillium+Web:200,400');
+@import url('https://fonts.googleapis.com/css?family=Assistant:300|Exo+2:200,400|Heebo:300|Khula:300|Palanquin:100,400|Work+Sans:200,300,500|Titillium+Web:200,400');
 
 body, .telephone p, button, input, optgroup, select, textarea {
     font-family: 'Work Sans', Helvetica, Arial, sans-serif;
@@ -457,21 +457,21 @@ my-telephone p.large {
                                              .credits-content.active {
                                                 display: block;                                             
                                             }
-                                            .navbar a, footer nav, .subnav, .breadcrumb {
-                                                font-weight: 400;
-                                            }
                                           /* --- MOBILE and TABLETS --- */
                                             body {
                                                 font-size: 18px;
-                                                color: Black;
                                                 padding-top: 35px;
-                                                        -webkit-font-smoothing: subpixel-antialiased;
-
+                                                -webkit-font-smoothing: subpixel-antialiased;
                                             }
-
+                                            body, .telephone p, button, input, optgroup, select, textarea,
+                                            .navbar a, footer nav, .subnav, .breadcrumb {
+                                                font-weight: 300;
+                                            }
+                                            /*
                                             .black-links a, .black-links a:focus {
                                                 color: Black;
                                             }
+                                            */
                                             .breadcrumb > .active {
                                                 font-size: 18px;
                                                 color: black;
@@ -679,7 +679,6 @@ my-telephone p.large {
                                                 padding: 15px;
                                                 border: none;
                                                 border-top: 1px solid #ddd;
-                                                color: Black;
                                                 background: #f8f8f8;
                                             }
                                             nav > ul:first-child > li:first-child > a {
