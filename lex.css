@@ -475,6 +475,12 @@ my-telephone p.large {
                                              section.thefirm header {
                                                 border-bottom: 1px solid #ddd;
                                             }
+                                            .banner.the_firm h1 {
+                                                font-weight: 400;
+                                            }
+                                            section.contactus h2.nogutter {
+                                                text-align: center;
+                                            }
                                              .credits-content {
                                                 display: none;
                                             }
