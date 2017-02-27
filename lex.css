@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Assistant:300|Exo+2:200,400|Heebo:300|Khula:300|Palanquin:100,400|Work+Sans:200,400|Titillium+Web:200,400');
+@import url('https://fonts.googleapis.com/css?family=Assistant:300|Exo+2:200,400|Heebo:300|Khula:300|Palanquin:100,400|Work+Sans:200,300,400|Titillium+Web:200,400');
 
 body, .telephone p, button, input, optgroup, select, textarea {
     font-family: 'Work Sans', Helvetica, Arial, sans-serif;
@@ -472,6 +472,9 @@ my-telephone p.large {
                                                 background: rgba(45, 57, 57, 0.05);
                                                 padding-bottom: 1em;
                                             }
+                                             section.thefirm header {
+                                                border-bottom: 1px solid #ddd;
+                                            }
                                              .credits-content {
                                                 display: none;
                                             }
@@ -480,7 +483,7 @@ my-telephone p.large {
                                             }
                                           /* --- MOBILE and TABLETS --- */
                                             body {
-                                                color: #333;
+                                                color: black;
                                                 font-size: 18px;
                                                 padding-top: 35px;
                                                 font-weight: 300;
