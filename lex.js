@@ -259,17 +259,17 @@
       	var coordinatesUS = {lat: 25.772439, lng: -80.191349};
       	var coordinatesFR = {lat: 48.874967, lng: 2.320793};
 
-    	mapUS = new google.maps.Map(document.getElementById('mapUS'), {
+    	var mapUS = new google.maps.Map(document.getElementById('mapUS'), {
     	  zoom: 15,
     	  scrollwheel: false,
     	  center: coordinatesUS
     	});
-    	var marker = new google.maps.Marker({
+    	var markerUS = new google.maps.Marker({
     	  position: coordinatesUS,
     	  map: mapUS
     	});
 
-    	mapFR = new google.maps.Map(document.getElementById('mapFR'), {
+    	var mapFR = new google.maps.Map(document.getElementById('mapFR'), {
     	  zoom: 13,
     	  scrollwheel: false,
     	  center: coordinatesFR
@@ -279,6 +279,43 @@
     	  map: mapFR
      	});
     }])
+
+ //    app.service('Map', function($q) {
+	//     this.init = function() {
+	//         var options = {
+	//             center: new google.maps.LatLng(40.7127837, -74.00594130000002),
+	//             zoom: 13,
+	//             disableDefaultUI: true    
+	//         }
+	//         this.map = new google.maps.Map(
+	//             document.getElementById("map"), options
+	//         );
+	//         this.places = new google.maps.places.PlacesService(this.map);
+	//     }
+	    
+	//     this.search = function(str) {
+	//         var d = $q.defer();
+	//         this.places.textSearch({query: str}, function(results, status) {
+	//             if (status == 'OK') {
+	//                 d.resolve(results[0]);
+	//             }
+	//             else d.reject(status);
+	//         });
+	//         return d.promise;
+	//     }
+	    
+	//     this.addMarker = function(res) {
+	//         if(this.marker) this.marker.setMap(null);
+	//         this.marker = new google.maps.Marker({
+	//             map: this.map,
+	//             position: res.geometry.location,
+	//             animation: google.maps.Animation.DROP
+	//         });
+	//         this.map.setCenter(res.geometry.location);
+	//     }
+    
+	// });
+
 
   // JQuery code
 
