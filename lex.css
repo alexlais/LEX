@@ -370,7 +370,6 @@ nav.profile-menu li.profile-menu:hover .dropdown-menu {
 .banner.contact {
     background-image: url("assets/images/BG-contact.jpg");
     background-position: right center;
-    text-align: left;
 }
 .banner.locations {
     background-image: url("assets/images/BG-locations.png");
