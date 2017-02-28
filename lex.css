@@ -278,6 +278,7 @@ nav.profile-menu li.profile-menu:hover .dropdown-menu {
     background: #009999;
     color: White;
     text-shadow: none;
+    font-weight: 300;
 }
 .navbar.noscroll .navbar-brand:hover {
     background: #009999;
@@ -297,6 +298,7 @@ nav.profile-menu li.profile-menu:hover .dropdown-menu {
 .navbar.noscroll .navbar-right > li > a:last-child, .navbar.noscroll .navbar-right > li > a:last-child:hover, .navbar.noscroll .highlight > li > a:last-child:focus {
     background: rgba(255, 128, 0, 0.6);
     color: White;
+    font-weight: 300;
 }
 .navbar .navbar-right > li > a:last-child:hover, .navbar.noscroll .navbar-right > li.active > a:last-child {
     border-bottom: 0;
@@ -343,7 +345,6 @@ nav.profile-menu li.profile-menu:hover .dropdown-menu {
 
 .banner.the_firm, .banner.practice_areas, .banner.banner-ourteam, .banner.links_events, .banner.contact, .banner.locations {
     background-repeat: no-repeat;
-    background-size: 100% 100%;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -476,9 +477,6 @@ section.locations .highlight {
                                                 display: block;
                                                 margin: 30px auto;
                                              }
-                                            .banner.contact {
-                                                text-align: center;
-                                            }
                                              .mobile-center, .text-center.mobile-center {
                                                 text-align: center;
                                              }
@@ -753,14 +751,16 @@ section.locations .highlight {
                                             .banner {
                                                 padding-top: 70px;
                                                 padding-bottom: 30px;
-                                                background-size: 100% !important;
-                                                background-position: center top !important;
+                                                background-position: center !important;
                                                 background-attachment: scroll !important;
                                             }
                                             .banner.home {
                                                 padding-top: 50px;
                                                 padding-bottom: 10px;
                                                 background-image: url("assets/images/BG-home.png");
+                                            }
+                                            .banner.locations {
+                                                background-image: url("assets/images/BG-locationsM.png");
                                             }
 
 
