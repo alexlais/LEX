@@ -565,9 +565,6 @@ my-telephone p.large {
                                                 width: 140px;
                                                 height: 140px;
                                             }
-                                            .ourteam .content {
-                                                border-top: 1px solid rgba(0, 0, 0, 0.15);
-                                            }
                                             span.location {
                                                 font-size: 0.9em;
                                                 color: #999;
@@ -736,7 +733,11 @@ my-telephone p.large {
                                             }
                                             .ourteam .content {
                                                 padding-top: 2rem;
-                                                    margin-top: 3rem;
+                                                margin-top: 3rem;
+                                                border-top: 1px solid rgba(0, 0, 0, 0.15);
+                                            }
+                                            .ourteam .content:first-child {
+                                                margin-top: 0;
                                             }
                                             .ourteam  .col-sm-8 .content:first-child {
                                                     margin-top: 0;
@@ -836,8 +837,8 @@ my-telephone p.large {
                                         }
 
 
-                                        /* === col-xm-* ======================================== */
-                                        @media only screen and (max-width : 500px) {
+                                        /* === locations layout ======================================== */
+                                        @media only screen and (max-width : 550px) {
                                             div.col-xs-6 {
                                                 width: auto;
                                                 float: none;
@@ -1705,8 +1706,19 @@ my-telephone p.large {
             footer nav > ul > li > a, footer nav > ul > li > a:focus {
                 font-size: 14px;
             }
-            h2, h2.smaller, .practiceareas h2 {
-                font-size: 35px;
+            section.thefirm {
+                margin-bottom: 0;
+            }
+            section.thefirm .container.mobile-center p {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            section.thefirm .focus {
+                background: transparent;
+            }
+            section.thefirm .focus-mobile {
+                background: rgba(45, 57, 57, 0.05);
+                padding-bottom: 1em;
             }
             .profile-list h3, .contactus h3 {
                 font-size: 24px
@@ -1730,6 +1742,13 @@ my-telephone p.large {
             }
             .credits-content {
                 width: 180px;
+            }
+            section.promocall {
+                padding-bottom: 0;
+            }
+            .headline.background.investment {
+                margin-top: 0;
+                margin-bottom: 0;
             }
         }
 
