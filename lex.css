@@ -422,22 +422,6 @@ my-telephone p.large {
 /* --- DONE ------ DONE ------ DONE -------- DONE ------- DONE -------- DONE -------*/
 
 
-
-
-                                        /* === Retina ========================================= */
-                                        @media only screen and (max-width : 320px) {}
-
-                                        /* === MOBILE ONLY ============ XSMALL ================ */
-                                        @media only screen and (max-width : 480px) {}
-
-                                        /* === col-xm-* ======================================== */
-                                        @media only screen and (max-width : 500px) {
-                                            div.col-xs-6 {
-                                                width: auto;
-                                                float: none;
-                                            }
-                                        }
-
                                         /* === _MOBILE and TABLETS ====== SMALL ================= */
                                         @media only screen and (max-width : 768px) {
 
@@ -505,7 +489,6 @@ my-telephone p.large {
                                             }
                                             */
                                             .breadcrumb > .active {
-                                                font-size: 18px;
                                                 color: black;
                                             }
                                             h1 {
@@ -632,15 +615,13 @@ my-telephone p.large {
                                             }
                                             .navbar .navbar-toggle {
                                                 padding: 0 2px 2px;
-                                                margin: 5px 13px 0 0;
+                                                margin: 2px 13px 0 0;
                                                 background: rgba(255, 255, 255, 0.8);
                                                 border-radius: 0;
                                             }
                                             .navbar .navbar-toggle .icon-bar {
                                                 background: #009999;
-                                                height: 3px;
-                                                margin-top: 4px;
-                                                margin-bottom: 1px;
+                                                margin-top: 6px;
                                                 width: 23px;
                                             }
                                             nav .navbar-brand {
@@ -855,7 +836,68 @@ my-telephone p.large {
                                         }
 
 
+                                        /* === col-xm-* ======================================== */
+                                        @media only screen and (max-width : 500px) {
+                                            div.col-xs-6 {
+                                                width: auto;
+                                                float: none;
+                                            }
+                                        }
 
+                                        /* === MOBILE ONLY ============ XSMALL ================ */
+                                        @media only screen and (max-width : 480px) {}
+
+                                        /* === Retina ========================================= */
+                                        @media only screen and (max-width : 320px) {
+                                            cc {
+                                                word-brake: normal;
+                                            }
+                                            body, .disclaimer p, footer .copyright {
+                                                font-size: 14px;
+                                            }
+                                            .caption {
+                                                font-size: 16px;                                                
+                                            }
+                                            .telephone p.large, my-telephone p.large {
+                                                font-size: 18px;
+                                            }
+                                            h1 {
+                                                font-size: 26px;
+                                            }
+                                            h2 {
+                                                font-size: 26px;
+                                            }
+                                            h3, h3 a {
+                                                font-size: 22px !important;
+                                            }
+                                            h4 {
+                                                font-size: 19px !important;
+                                            }
+                                            .banner {
+                                                padding: 10px 0 !important;
+                                            }
+                                            .profile-list a.image.mobile img {
+                                                width: 100px;
+                                                height: 100px;
+                                            }
+                                            .profile-header .img-circle {
+                                                width: 150px;
+                                                height: 150px;
+                                            }
+                                            /*
+                                            footer .contact .content {
+                                                clear: left;
+                                                text-align: center;
+                                            }
+                                            footer .contact img {
+                                                float: none;
+                                                display: block;
+                                                margin: 5px auto;
+                                            }
+                                            */
+
+
+                                        }
 
 
 
