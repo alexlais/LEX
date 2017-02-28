@@ -142,7 +142,7 @@ h3 {
 .jighlight h3 {
     color: #ace600;
 }
-.ourteam h3, .contactus h3 {
+.ourteam h3 {
     color: #ff8000;
 }
 .profile-header h1 span {
@@ -286,6 +286,7 @@ nav.profile-menu li.profile-menu:hover .dropdown-menu {
 }
 .nav.navbar-nav > li > a, footer nav > ul > li > a, footer nav > ul > li > a:focus {
     text-transform: uppercase;
+    word-spacing: 3px;
 }
 .navbar .navbar-brand {
     text-transform: none;
@@ -457,6 +458,9 @@ section.locations .highlight {
                                                 display: block;
                                                 margin: 30px auto;
                                              }
+                                            .banner.contact {
+                                                text-align: center;
+                                            }
                                              .mobile-center, .text-center.mobile-center {
                                                 text-align: center;
                                              }
@@ -991,16 +995,6 @@ section.locations .highlight {
         margin-top: 0;
         margin-bottom: 0;
     }
-
-    /*
-        .nogutter > .container > .row, .nogutter > .container > .row > div {
-            padding-top: 0;
-            padding-bottom: 0;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-    */
-
     .border-top {
         border-top: 1px solid rgba(0,0,0,0.1);
         margin-top: 4rem;
@@ -1070,6 +1064,7 @@ section.locations .highlight {
         margin-left: -15px;
         font-size: 17px;        
     }
+
     /* -- LINK border -----------------------------------------------------  */
 
     .breadcrumb a, .breadcrumb a:focus, a.back-link:hover, p a, p a:focus {
@@ -1088,7 +1083,9 @@ section.locations .highlight {
     	font-size: 80px;
     }
 
-
+    .image + h2, .image + div h2, div.image + h3, .image + div h3, .maps h3 {
+        padding-top: 1.5rem;
+    }
 
     .highlight, .headline {
         padding-top: 2rem;
@@ -1103,15 +1100,14 @@ section.locations .highlight {
         padding-bottom: 5rem;
         margin-top: 0;
     }
-
-
     .caption {
         font-size: 40px;
         line-height: 1.3;
         color: #999;
     }
+    /*
     .headline h2.caption {
-	color: #009999;
+	   color: #009999;
     }
     .highlight.headline .caption, .highlight.headline .subcaption {
         color: #ddd;
@@ -1119,13 +1115,10 @@ section.locations .highlight {
     .highlight.headline,  {
         margin-bottom: 0;
     }
+    */
     .headline .subcaption {
         padding-bottom: 1.3;
         color: #555;
-    }
-    .headline.background .subcaption {
-    }
-    .highlight .headline .subcaption {
     }
     .cta {
         display: block;
@@ -1139,14 +1132,6 @@ section.locations .highlight {
         background: transparent;
         line-height: 2;
     }
-/*
-    .highlight .cta a {
-        border: 1px solid rgba(0, 153, 153, 1);
-        border: 2px solid rgba(0, 204, 204, 1);
-        background: transparent;
-        color: #00cccc;
-    }
-*/
     .cta a:after {
         font-size: 25px;
         content: "\271A";
@@ -1223,13 +1208,6 @@ section.locations .highlight {
         opacity: .15;
         z-index: -1;
     }
-    .practiceareas section.promocall, .ourteam section.promocall {
-        margin-top: 7rem;
-    }
-
-    .image + h2, .image + div h2, div.image + h3, .image + div h3 {
-        padding-top: 1.5rem;
-    }
     /* , .col-no-padding + div h2 */
     /* --- --- --- */
 
@@ -1299,13 +1277,8 @@ section.locations .highlight {
 
 
     /* --- _PAGES ----------------- MEDIUM or larger --- */
-    section.thefirm, section.contactus {
-        margin-bottom: 8rem;
-    }
-    section.linksevents, .ourteam .container.description {
-        margin-bottom: 12rem;
-    }
-    .contactus, .profile-list {
+    section.thefirm, section.practiceareas, section.contactus, section.linksevents, .ourteam .container.description, .contactus, .profile-list {
+        margin-bottom: 5rem;
     }
     /* --- _HOME ------------------ MEDIUM or larger --- */
     span.location {
@@ -1350,13 +1323,8 @@ section.locations .highlight {
     .profile-header {
         padding-top: 40px;
         padding-bottom: 0;
-        background: rgba(0, 55, 70, 0.6);
         background: #e5e5e5;
-        box-shadow: inset 0 -100px 100px 10px rgba(255,255,255,0.5),
-                    0 10px 25px -10px rgba(0,0,0,0.2);
-
         box-shadow: inset 0 -100px 100px 10px rgba(255,255,255,0.7), inset 0 -10px 25px -10px rgba(0,0,0,0.7);
-
     }
     .profile-header h1 {
     	padding-top: 35px;
@@ -1393,10 +1361,7 @@ section.locations .highlight {
     .ourteam .description p {
     }
     /* --- _LINKSEVENTS ---------- MEDIUM or larger --- */
-    .linksevents header {
-        border-bottom: 1px solid rgba(0,0,0,0.1);
-        padding-bottom: 2em;
-    }
+
     /* --- _CONTACTUS ------------ MEDIUM or larger --- */
 
 
@@ -1414,7 +1379,6 @@ section.locations .highlight {
     section.contactus .focus {
         padding: 2rem 15px;
     }
-
     section.contactus .field-name {
         text-align: right;
         min-width: 50px;
@@ -1430,12 +1394,6 @@ section.locations .highlight {
     section.contactus .content p.long span {
         font-size: 16px;
     }
-    /*
-    section.contactus .gutter {
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-    }
-    */
     address {
         margin: 0;
     }
@@ -1461,9 +1419,6 @@ section.locations .highlight {
     }
     .form-control {
         height: 40px;
-    }
-    section.contactus .container.border-top h2 {
-        margin-top: 0.3em;
     }
     section.contactus .container.border-top .smaller {
         margin-top: 1.4em;
@@ -1739,7 +1694,7 @@ section.locations .highlight {
             section.thefirm .container.mobile-center .row div {
                 padding-bottom: 5rem;
             }
-            .profile-list h3, .contactus h3 {
+            .profile-list h3 {
                 font-size: 24px
             }
             .profile-list img {
