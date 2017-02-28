@@ -445,7 +445,7 @@ my-telephone p.large {
                                                 height: 75px;
                                                 margin: 30px auto;
                                              }
-                                             section.thefirm .mobile-center {
+                                             .mobile-center, .text-center.mobile-center {
                                                 text-align: center;
                                              }
                                              section.thefirm .focus {
@@ -458,6 +458,7 @@ my-telephone p.large {
                                             }
                                              section.locations header, section.thefirm header {
                                                 border-bottom: 1px solid #eee;
+                                                margin-bottom: 2em;
                                             }
                                             .banner.the_firm h1 {
                                                 font-weight: 400;
