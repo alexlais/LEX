@@ -366,7 +366,7 @@ nav.profile-menu li.profile-menu:hover .dropdown-menu {
 }
 .banner.links_events {
     background-image: url("assets/images/BG-links_events.jpeg");
-    background-position: right top;
+    background-position: center top;
 }
 .banner.contact {
     background-image: url("assets/images/BG-contact.jpg");
@@ -448,9 +448,7 @@ section.thefirm .thumb {
     border-top: 1px solid #00cccc;
 }
 /* --- _LOCATIONS --------- */
-section.locations .highlight {
-    margin-top: 0;
-}
+
 
 
 /* --- DONE ------ DONE ------ DONE -------- DONE ------- DONE -------- DONE -------*/
@@ -761,6 +759,9 @@ section.locations .highlight {
                                             }
                                             .banner.locations {
                                                 background-image: url("assets/images/BG-locationsM.png");
+                                            }
+                                            .banner.links_events {
+                                                background-position: center top !important;
                                             }
 
 
@@ -1111,9 +1112,6 @@ section.locations .highlight {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-    .highlight {
-        margin-top: 4rem;
-    }
 
     .headline.background, .headline.highlight {
         padding-top: 5rem;
@@ -1186,7 +1184,6 @@ section.locations .highlight {
         background-position: left bottom;
         text-align: right !important;
         margin-top: 5rem;
-        margin-bottom: 5rem;
     }
     .headline.background.business {
         background-image: url("assets/images/headline-business.jpg");
