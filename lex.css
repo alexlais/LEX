@@ -215,7 +215,6 @@ cc, .telephone p.large, p.long {
 .profile-header a.back-link {
 	margin: 0;
 	font-size: 0.8em;
-	opacity: 0.7;
 }
 .profile-header a.back-link:before {
 	content: "\21E4";
@@ -226,7 +225,6 @@ cc, .telephone p.large, p.long {
 	opacity: 0.7;
 }
 .profile-header a.back-link:hover {
-	opacity: 1;
 	border: 0;
 }
 
@@ -343,7 +341,7 @@ nav.profile-menu li.profile-menu:hover .dropdown-menu {
     background-image: url("assets/images/BG-home.png");
 }
 
-.banner.the_firm, .banner.practice_areas, .banner.banner-ourteam, .banner.links_events, .banner.contact {
+.banner.the_firm, .banner.practice_areas, .banner.banner-ourteam, .banner.links_events, .banner.contact, .banner.locations {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-size: cover;
@@ -373,6 +371,10 @@ nav.profile-menu li.profile-menu:hover .dropdown-menu {
     background-image: url("assets/images/BG-contact.jpg");
     background-position: right center;
     text-align: left;
+}
+.banner.locations {
+    background-image: url("assets/images/BG-locations.png");
+    background-position: center;
 }
 .banner.home {
     background-color: transparent;
@@ -424,13 +426,28 @@ my-telephone p.large {
     font-weight: normal;
 }
 
-/* --- _THEFIRM --------- MEDIUM or larger --- */
+/* --- _THEFIRM --------- */
 section.thefirm .thumb {
     width: 100px;
     height: 100px;
     margin: 40px 0;
 }
-/* --- _LOCATIONS ------------- MEDIUM or larger --- */
+/* --- _profile-list ------ */
+.profile-list a.image {
+    display: block;
+    padding-bottom: 2rem;
+}
+.profile-list h3 a {
+    color: #666;
+    border-top: 1px solid #aaa;
+    padding-bottom: 0;
+    line-height: 1;
+}
+.profile-list h3 a:hover, .profile-list a.image:hover ~ h3 a {
+    color: #00cccc;
+    border-top: 1px solid #00cccc;
+}
+/* --- _LOCATIONS --------- */
 section.locations .highlight {
     margin-top: 0;
 }
@@ -565,10 +582,12 @@ section.locations .highlight {
                                                 background-size: 10px 10px;
                                                 padding-left: 15px;
                                             }
+                                            /*
                                             .profile-list a.image.mobile + h3 {
                                                 padding-top: 10px;
                                                 margin-top: 10px;
                                             }
+                                            */
                                             .profile-list .row > div:nth-child(2n+4) {
                                                 clear: left;
                                             }
@@ -1302,25 +1321,7 @@ section.locations .highlight {
     /* --- _OURTEAM ------------- MEDIUM or larger --- */
 
     /* --- _profile-list ------------- MEDIUM or larger --- */
-    .profile-list {
-    }
-    .profile-list .row > div:nth-child(3n+5) {
-        clear: left;
-    }
-    .profile-list a.image {
-        display: block;
-        padding-bottom: 2rem;
-    }
-    .profile-list h3 a {
-        color: #666;
-        border-top: 1px solid #aaa;
-        padding-bottom: 0;
-        line-height: 1;
-    }
-    .profile-list h3 a:hover, .profile-list a.image:hover ~ h3 a {
-        color: #00cccc;
-        border-top: 1px solid #00cccc;
-    }
+
     /* --- _profile-header ------------- MEDIUM or larger --- */
     .profile-header {
         padding-top: 40px;
@@ -1659,6 +1660,9 @@ section.locations .highlight {
                 -moz-column-count: 3;
                 column-count: 3;
             }
+            .profile-list .row > div:nth-child(3n+5) {
+                clear: left;
+            }
         }
 
         /* MEDIUM only  */
@@ -1802,10 +1806,6 @@ section.locations .highlight {
 
                                 .navbar, .subnav {
                                     font-size: 16px;
-                                }
-                                /* cancel previous clear which was for a 3 column layout */
-                                .profile-list .row > div:nth-child(3n+5) {
-                                    clear: none;
                                 }
                                 /* add new clear for each 4 items (4n) starting from the sixth (the team heading is counted also!) */
                                 .profile-list .row > div:nth-child(4n+6) {
