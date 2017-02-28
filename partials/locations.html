@@ -24,7 +24,7 @@
     itemid=""
     itemref="">
 
-    <header class="container headline border-bottom">
+    <header class="container headline">
         <div class="row">
             <div class="col-sm-12 col-md-10 col-md-offset-1 text-center">
                 <p class="caption">We speak many languages and address complex transaction, business and investment matters across Europe and the Americas.</p>
@@ -32,10 +32,14 @@
         </div>
     </header>
 
-    <div class="container">
-        <div class="row">                
-            <h2 class="text-center mobile-center">Our Locations</h2>
-            <ng-include src="'includes/locations-include.html'"></ng-include>
-        </div><!-- /.row -->
-    </div><!-- /.container -->
+    <div class="highlight">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-no-gutter">
+                    <h2>Our Locations</h2>
+                </div>              
+                <ng-include src="'includes/locations-include.html'"></ng-include>
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div>
 </section>

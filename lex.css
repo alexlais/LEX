@@ -393,6 +393,9 @@ span.link:hover {
     color: #00cccc;
     border-bottom: 0;
 }
+span.link a {
+    margin-right: 20px;
+}
 
 .telephone p.large {
     color: #009999;
@@ -424,6 +427,11 @@ section.thefirm .thumb {
     height: 70px;
     margin: 40px 0;
 }
+/* --- _LOCATIONS ------------- MEDIUM or larger --- */
+section.locations .highlight {
+    margin-top: 0;
+}
+
 
 /* --- DONE ------ DONE ------ DONE -------- DONE ------- DONE -------- DONE -------*/
 
@@ -459,10 +467,6 @@ section.thefirm .thumb {
                                              section.thefirm .focus-mobile {
                                                 background: rgba(45, 57, 57, 0.05);
                                                 padding-bottom: 1em;
-                                            }
-                                             section.locations header {
-                                                border-bottom: 1px solid #eee;
-                                                margin-bottom: 2em;
                                             }
                                             .banner.the_firm h1 {
                                                 font-weight: 400;
@@ -558,6 +562,9 @@ section.thefirm .thumb {
                                             .profile-list a.image.mobile + h3 {
                                                 padding-top: 10px;
                                                 margin-top: 10px;
+                                            }
+                                            .profile-list .row > div:nth-child(2n+4) {
+                                                clear: left;
                                             }
                                             .ourteam .profile-list h3 a {
                                                 border-top: 1px solid #999;
@@ -846,8 +853,8 @@ section.thefirm .thumb {
                                         }
 
 
-                                        /* === locations layout ======================================== */
-                                        @media only screen and (max-width : 550px) {
+                                        /* === col-xs-6 braking point ======================================== */
+                                        @media only screen and (max-width : 580px) {
                                             div.col-xs-6 {
                                                 width: auto;
                                                 float: none;
@@ -1065,11 +1072,10 @@ section.thefirm .thumb {
     }
     /* -- LINK border -----------------------------------------------------  */
 
-    /* nav color */
-    .breadcrumb a, .breadcrumb a:focus, a.back-link:hover, footer a:focus, p a, p a:focus {
+    .breadcrumb a, .breadcrumb a:focus, a.back-link:hover, p a, p a:focus {
         border-bottom: 1px solid #009999;
     }
-    .breadcrumb a:hover, p a:hover, a.back-link {
+    .breadcrumb a:hover, p a:hover, a.back-link, footer a {
         border-bottom: 0;
     }
 
@@ -1293,7 +1299,7 @@ section.thefirm .thumb {
 
 
     /* --- _PAGES ----------------- MEDIUM or larger --- */
-    section.thefirm, section.locations, section.contactus {
+    section.thefirm, section.contactus {
         margin-bottom: 8rem;
     }
     section.linksevents, .ourteam .container.description {
@@ -1610,7 +1616,7 @@ section.thefirm .thumb {
         margin-bottom: 5rem;
         padding-top: 0;
         padding-bottom: 0;
-        font-size: 18px;
+        font-size: 16px;
     }
     footer aside.copyright {
         padding-top: 0.5rem;
@@ -1814,6 +1820,9 @@ section.thefirm .thumb {
                 }
                 .cta a {
                     font-size: 22px;
+                }
+                footer div.contact {
+                    font-size: 18px;
                 }
 
                  /* --- _OURTEAM HOME ------------- LARGE or larger --- */
