@@ -79,6 +79,9 @@ body {
 
 
 /* --- --- --- */
+.breadcrumb>.active {
+    color: inherit;
+}
 .breadcrumb {
     background: transparent;
     border: 0;
@@ -343,7 +346,6 @@ nav.profile-menu li.profile-menu:hover .dropdown-menu {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
-    background-image: url("assets/images/BG-home.png");
 }
 
 .banner.the_firm, .banner.practice_areas, .banner.banner-ourteam, .banner.links_events, .banner.contact, .banner.locations {
@@ -415,7 +417,7 @@ my-telephone p.large {
     font-size: 37px;
 }
 .telephone p.hours, my-telephone p.hours {
-    padding-left: 30px;
+    padding: 10px 0 10px 30px;
     background: url("assets/images/thumbs/clock.svg") center left no-repeat;
     background-size: 20px;
     display: inline;
@@ -450,9 +452,17 @@ section.thefirm .thumb {
     color: #00cccc;
     border-top: 1px solid #00cccc;
 }
-/* --- _LOCATIONS --------- */
-
-
+/* --- _contactus --------- */
+section.contactus .row.focus-mobile {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-right: 0;
+}
+section.contactus .focus .border {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
 
 /* --- DONE ------ DONE ------ DONE -------- DONE ------- DONE -------- DONE -------*/
 
@@ -522,7 +532,7 @@ section.thefirm .thumb {
                                                 margin: 0 0 0.5em; 
                                             }
                                             h1 {
-                                            	font-size: 40px;
+                                            	font-size: 50px;
                                             }
                                             .profile-header h1 {
                                                 color: #009999;
@@ -552,9 +562,22 @@ section.thefirm .thumb {
                                             .caption {
                                                 font-size: 23px;
                                             }
-                                            .contactus .col-sm-4.focus.text-center {
+
+                                            section.contactus .focus-mobile {
                                                 text-align: center;
+                                                padding-top: 15px;
                                             }
+                                            section.contactus .focus-mobile .border {
+                                                border-right: 1px solid #ddd;
+                                                border-bottom: none;
+                                                margin-bottom: 0;
+                                                padding-bottom: 0;
+                                            }
+                                            section.contactus .row.focus-mobile {
+                                                margin: 0;
+                                            }
+
+
                                             .telephone p.large, my-telephone p.large {
                                                 font-size: 25px;
                                             }
@@ -750,16 +773,24 @@ section.thefirm .thumb {
 
                                             /* --- MOBILE and TABLETS --- */
                                             .banner, .banner.home {
-                                                padding-top: 70px;
+                                                padding-top: 30px;
                                                 padding-bottom: 30px;
                                                     background-size: cover;
                                                 background-position: center !important;
                                                 background-attachment: scroll !important;
                                             }
                                             .banner.home {
-                                                padding-top: 50px;
+                                                padding-top: 10px;
                                                 padding-bottom: 10px;
                                                 background-image: url("assets/images/BG-home.png");
+                                            }
+                                            .banner.home h1 {
+                                                font-size: 40px;
+                                            }
+                                            .banner.home p {
+                                                font-size: 25px;
+                                                line-height: 1;
+                                                padding: 0;
                                             }
                                             .banner.locations {
                                                 background-image: url("assets/images/BG-locationsM.png");
@@ -804,13 +835,9 @@ section.thefirm .thumb {
                                             section.thefirm .last {
                                                 padding-bottom: 4rem !important;
                                             }
-                                            section.contactus .focus {
-                                                padding: 2rem 15px;
-                                                text-align: center;
-                                            }
-                                            .contactus .focus .border-bottom, form {
+                                            form {
                                                 margin-bottom: 2rem;
-                                                padding-bottom: 2rem;
+                                                padding-bottom: 4rem;
                                                 border-bottom: 1px solid rgba(0,0,0,0.1);
                                             }
 
@@ -879,10 +906,17 @@ section.thefirm .thumb {
 
 
                                         /* === col-xs-6 braking point ======================================== */
-                                        @media only screen and (max-width : 580px) {
+                                        @media only screen and (max-width : 585px) {
                                             div.col-xs-6 {
                                                 width: auto;
                                                 float: none;
+                                            }
+
+                                            section.contactus .focus .border {
+                                                border-right: none;
+                                                border-bottom: 1px solid #ddd;
+                                                padding-bottom: 3rem;
+                                                margin-bottom: 3rem;
                                             }
                                         }
 
@@ -1062,10 +1096,10 @@ section.thefirm .thumb {
     }
     /* --- --- --- */
     h4 {
-        font-size: 25px;
+        font-size: 24px;
     }
     my-telephone p.large {
-        font-size: 28px;
+        font-size: 26px;
     }
     footer {
         font-size: 14px;
@@ -1371,11 +1405,8 @@ section.thefirm .thumb {
     }
     section.contactus h2.nogutter {
         margin-bottom: 3rem;
-        padding-left: 15px;
     }
-    section.contactus .focus {
-        padding: 2rem 15px;
-    }
+
     section.contactus .field-name {
         text-align: right;
         min-width: 50px;
@@ -1395,7 +1426,6 @@ section.thefirm .thumb {
         margin: 0;
     }
     form {
-        padding-left: 15px;
     }
     .btn-primary {
         font-size: 18px;
@@ -1726,6 +1756,9 @@ section.thefirm .thumb {
                 margin-top: 0;
                 margin-bottom: 0;
             }
+            section.contactus .row.focus-mobile {
+                margin: 0;
+            }
         }
 
 
@@ -1795,6 +1828,9 @@ section.thefirm .thumb {
                     margin-left: 10%;
                     margin-right: 10%;
                 }
+                section.contactus .maps {
+                    font-size: 18px;
+                }
             }
 
 
@@ -1809,9 +1845,6 @@ section.thefirm .thumb {
                                 /* add new clear for each 4 items (4n) starting from the sixth (the team heading is counted also!) */
                                 .profile-list .row > div:nth-child(4n+6) {
                                     clear: left;
-                                }
-                                address p {
-                                    font-size: 0.86em;
                                 }
                                 footer {
                                     font-size: 15px;
