@@ -846,8 +846,8 @@ section.contactus .focus .border {
 
 
                                             /* --- MOBILE and TABLETS --- */
-                                            .practiceareas > .container {
-                                                margin-bottom: 2rem;
+                                            .practiceareas > img {
+                                                padding-top: 3rem;
                                             }
                                             .ourteam .content {
                                                 padding-top: 2rem;
@@ -868,7 +868,7 @@ section.contactus .focus .border {
                                                 padding-bottom: 3rem;
                                                 border-bottom: 1px solid #ddd;
                                             }
-                                            section.home, section.the_firm .last, section.contactus, section.linksevents, section.ourteam, section .ourteam {
+                                            section.home, section.the_firm .last, section.practiceareas, section.contactus, section.linksevents, section.ourteam, section .ourteam {
                                                 padding-bottom: 2rem;
                                             }
                                             section.thefirm .last {
@@ -1428,6 +1428,11 @@ section.contactus .focus .border {
         column-count: 2;
         column-gap: 0;
     }
+    .ourteam .content .half-width {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
     ul.third-width {
         -webkit-column-count: 3;
         -moz-column-count: 3;
@@ -1459,6 +1464,9 @@ section.contactus .focus .border {
         text-align: center;
     }
     /* --- _OURTEAM ------------- MEDIUM or larger --- */
+    section .ourteam .container.description {
+        font-size: 0.9em;
+    }
 
     /* --- _profile-list ------------- MEDIUM or larger --- */
 
