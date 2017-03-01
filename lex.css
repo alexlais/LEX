@@ -1833,6 +1833,10 @@ section.contactus .focus .border {
                     font-size: 18px;
                 }
 
+                 /* --- _HOME ------------- LARGE or larger --- */
+                .black-links h3 {
+                    font-size: 42px;
+                }
                  /* --- _OURTEAM HOME ------------- LARGE or larger --- */
                 .profile-list img {
                     width: 125px;
