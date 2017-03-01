@@ -151,6 +151,9 @@ h3 {
 .ourteam h3 {
     color: #ff8000;
 }
+.maps h3 {
+    padding-top: 1.5rem;
+}
 .profile-header h1 span {
     display: block;
     color: #aaa;
@@ -487,7 +490,7 @@ section.thefirm .thumb {
                                                 padding-bottom: 1em;
                                             }
                                             .banner.the_firm h1 {
-                                                font-weight: 400;
+                                                font-weight: 300;
                                             }
                                             section.contactus h2.nogutter {
                                                 text-align: center;
@@ -498,7 +501,7 @@ section.thefirm .thumb {
                                              .credits-content.active {
                                                 display: block;                                             
                                             }
-                                          /* --- MOBILE and TABLETS --- */
+                                            /* --- MOBILE and TABLETS --- */
                                             body {
                                                 color: black;
                                                 font-size: 18px;
@@ -515,8 +518,8 @@ section.thefirm .thumb {
                                                 color: Black;
                                             }
                                             */
-                                            .breadcrumb > .active {
-                                                color: black;
+                                            h1, h2, h3, h4, h6 {
+                                                margin: 0 0 0.5em; 
                                             }
                                             h1 {
                                             	font-size: 40px;
@@ -562,7 +565,7 @@ section.thefirm .thumb {
                                                 margin-top: 0;
                                                 margin-bottom: 0;
                                             }
-                                            .row.focus {
+                                            .row.focus-mobile {
                                                 margin-top: 0;
                                                 margin-bottom: 2rem;
                                             }
@@ -746,9 +749,10 @@ section.thefirm .thumb {
 
 
                                             /* --- MOBILE and TABLETS --- */
-                                            .banner {
+                                            .banner, .banner.home {
                                                 padding-top: 70px;
                                                 padding-bottom: 30px;
+                                                    background-size: cover;
                                                 background-position: center !important;
                                                 background-attachment: scroll !important;
                                             }
@@ -770,7 +774,7 @@ section.thefirm .thumb {
                                                 text-align: left;
                                             }
                                             .practiceareas > .container {
-                                                margin-bottom: 4rem;
+                                                margin-bottom: 2rem;
                                             }
                                             .ourteam .content {
                                                 padding-top: 2rem;
@@ -794,10 +798,12 @@ section.thefirm .thumb {
                                                 padding-bottom: 3rem;
                                                 border-bottom: 1px solid #ddd;
                                             }
-                                            .focus {
-                                                margin-top: 2rem;
+                                            section.home, section.the_firm .last, section.contactus, section.linksevents, section.ourteam, section .ourteam {
+                                                padding-bottom: 2rem;
                                             }
-
+                                            section.thefirm .last {
+                                                padding-bottom: 4rem !important;
+                                            }
                                             section.contactus .focus {
                                                 padding: 2rem 15px;
                                                 text-align: center;
@@ -818,9 +824,7 @@ section.thefirm .thumb {
                                                 margin-top: 20px;
                                             }
                                             .highlight {
-                                                margin-top: 3rem;
-                                                padding-top: 2rem;
-                                                padding-bottom: 3rem;
+                                                padding-bottom: 2rem;
                                             }
                                             .highlight h2 {
                                                margin: 0;
@@ -829,10 +833,6 @@ section.thefirm .thumb {
                                                color: #99cc00;
                                             }
                                             /* --- MOBILE and TABLETS --- */
-                                            .focus {
-                                                background: rgba(45, 57, 57, 0.05);
-                                                padding-bottom: 1em;
-                                            }
 
                                             .headline {
                                                 text-align: center;
@@ -1104,7 +1104,7 @@ section.thefirm .thumb {
     	font-size: 80px;
     }
 
-    .image + h2, .image + div h2, div.image + h3, .image + div h3, .maps h3 {
+    .image + h2, .image + div h2, div.image + h3, .image + div h3 {
         padding-top: 1.5rem;
     }
 
@@ -1681,12 +1681,14 @@ section.thefirm .thumb {
                 margin-left: 10%;
                 margin-right: 10%;
             }
-            section.thefirm .focus {
+            .focus {
                 background: transparent;
             }
-            section.thefirm .focus-mobile {
+            .focus-mobile {
                 background: rgba(45, 57, 57, 0.05);
-                padding-bottom: 1em;
+            }
+            .home .focus-mobile {
+                background: transparent;
             }
             section.thefirm .container.mobile-center .row {
                 margin-bottom: 0;
