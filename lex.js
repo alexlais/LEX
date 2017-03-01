@@ -118,10 +118,10 @@
         $scope.telephone = {
 	        usNumber: 	"(305) 358-9995",
 	        usFax: 		"(305) 358-9997",
-	        usHours: 	"??:??AM to ??:??PM (EST)",
+	        usHours: 	"8:00AM-6:00PM (EST)",
 	        frNumber: 	"(+33-1) 5643-3940",
 	        frFax: 		"(+33-1) 5643-3943",
-	        frHours: 	"??:??AM to ??:??PM"
+	        frHours: 	"8:00AM-6:00PM"
 	    };
         // ----------- END OF CONTENT CHANGES - DO NOT CHANGE BELOW! -------
 

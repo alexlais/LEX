@@ -125,8 +125,12 @@ a:hover, .dropdown-menu > li > a:hover, .navbar-nav > li.active > a {
 
 /*-- _HEADINGS and COPY -------------------------------------------- */
 
-h1, h2, h3, h4, h6 {
+h1, h2, h3 {
     margin: 0 0 0.75em;
+    line-height: 1.3;
+}
+h4, h6 {
+    margin: 0 0 0.5em;
     line-height: 1.3;
 }
 h2 {
@@ -318,7 +322,7 @@ nav.profile-menu li.profile-menu:hover .dropdown-menu {
 
 
 
-.nav > li.dropdown > a:hover {
+.nav > li.dropdown > a, .nav > li.dropdown > a:hover {
     border-bottom: 0;
     margin-bottom: 0;
 }
@@ -417,18 +421,18 @@ my-telephone p.large {
     font-size: 37px;
 }
 .telephone p.hours, my-telephone p.hours {
-    padding: 10px 0 10px 30px;
-    background: url("assets/images/thumbs/clock.svg") center left no-repeat;
+    padding: 3px 0 0 27px;
+    background: url("assets/images/thumbs/clock.svg") left center no-repeat;
     background-size: 20px;
-    display: inline;
     color: black;
     font-size: 0.8em;
     color: black;
-    line-height: 25px;
+    display: inline-block;
 }
 
 .form-group label {
-    font-weight: normal;
+    font-weight: 300;
+    font-size: 0.8em;
 }
 
 /* --- _THEFIRM --------- */
@@ -454,14 +458,14 @@ section.thefirm .thumb {
 }
 /* --- _contactus --------- */
 section.contactus .row.focus-mobile {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     margin-right: 0;
 }
 section.contactus .focus .border {
     border-bottom: 1px solid #ddd;
-    padding-bottom: 3rem;
-    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* --- DONE ------ DONE ------ DONE -------- DONE ------- DONE -------- DONE -------*/
@@ -484,9 +488,12 @@ section.contactus .focus .border {
                                                 margin: 0;
                                                 padding: 0;
                                              }
+                                             /* --- _THEFIRM --------- */
                                              section.thefirm img.visible-mobile {
                                                 display: block;
                                                 margin: 30px auto;
+                                                width: 60px;
+                                                height: 60px;
                                              }
                                              .mobile-center, .text-center.mobile-center {
                                                 text-align: center;
@@ -511,6 +518,9 @@ section.contactus .focus .border {
                                              .credits-content.active {
                                                 display: block;                                             
                                             }
+                                             .credits-content.active p {
+                                                margin-bottom: 0;                                             
+                                            }
                                             /* --- MOBILE and TABLETS --- */
                                             body {
                                                 color: black;
@@ -519,6 +529,11 @@ section.contactus .focus .border {
                                                 font-weight: 300;
                                                 -webkit-font-smoothing: subpixel-antialiased;
                                             }
+                                            .navbar a, .subnav a, footer nav, .breadcrumb,
+                                            .telephone {
+                                                font-weight: 300;
+                                            }
+
                                             button, input, optgroup, select, textarea,
                                             .navbar a, footer nav, .subnav, .breadcrumb {
                                                 font-weight: 400;
@@ -537,8 +552,8 @@ section.contactus .focus .border {
                                             .profile-header h1 {
                                                 color: #009999;
                                             }
-                                            .profile-header h1 span {
-                                                font-size: 18px;
+                                            .profile-header h1 span, .profile-list h3 span {
+                                                font-size: 22px;
                                             }
                                             h2 {
                                                 font-size: 45px;
@@ -579,7 +594,7 @@ section.contactus .focus .border {
 
 
                                             .telephone p.large, my-telephone p.large {
-                                                font-size: 25px;
+                                                font-size: 27px;
                                             }
                                             .list-inline > li {
                                                 padding: 0;
@@ -632,7 +647,7 @@ section.contactus .focus .border {
                                             }
                                             .profile-header {
                                                 text-align: center;
-                                                padding-top: 50px;
+                                                padding-top: 10px;
                                             }
                                             .navbar {
                                                 background: white;
@@ -789,7 +804,7 @@ section.contactus .focus .border {
                                             }
                                             .banner.home p {
                                                 font-size: 25px;
-                                                line-height: 1;
+                                                line-height: 1.1;
                                                 padding: 0;
                                             }
                                             .banner.locations {
@@ -801,9 +816,6 @@ section.contactus .focus .border {
 
 
                                             /* --- MOBILE and TABLETS --- */
-                                            .practiceareas .text-center {
-                                                text-align: left;
-                                            }
                                             .practiceareas > .container {
                                                 margin-bottom: 2rem;
                                             }
@@ -817,9 +829,6 @@ section.contactus .focus .border {
                                             }
                                             .ourteam  .col-sm-8 .content:first-child {
                                                     margin-top: 0;
-                                            }
-                                            .text-center {
-                                                text-align: inherit;
                                             }
                                             .profile-list, .profile-list .text-center {
                                                 text-align: center;
@@ -897,6 +906,9 @@ section.contactus .focus .border {
                                                 padding-top: 0;
                                                 padding-bottom: 0;
                                             }
+                                            .ourteam .description .col-sm-4, .ourteam .description .col-sm-8 {
+                                                padding-top: 0;
+                                            }
                                             /* --- CANCEL padding --- */
                                             .clearfix {
                                                 padding: 0 !important;
@@ -915,8 +927,8 @@ section.contactus .focus .border {
                                             section.contactus .focus .border {
                                                 border-right: none;
                                                 border-bottom: 1px solid #ddd;
-                                                padding-bottom: 3rem;
-                                                margin-bottom: 3rem;
+                                                padding-bottom: 2rem;
+                                                margin-bottom: 2rem;
                                             }
                                         }
 
@@ -937,7 +949,7 @@ section.contactus .focus .border {
                                             .telephone p.large, my-telephone p.large {
                                                 font-size: 18px;
                                             }
-                                            h1 {
+                                            h1, .banner.home h1 {
                                                 font-size: 26px;
                                             }
                                             h2 {
@@ -949,8 +961,8 @@ section.contactus .focus .border {
                                             h4 {
                                                 font-size: 19px !important;
                                             }
-                                            .banner {
-                                                padding: 10px 0 !important;
+                                            .banner.home p, .profile-header h1 span, .profile-list h3 span {
+                                                font-size: 17px;
                                             }
                                             .profile-list a.image.mobile img {
                                                 width: 100px;
@@ -959,6 +971,16 @@ section.contactus .focus .border {
                                             .profile-header .img-circle {
                                                 width: 150px;
                                                 height: 150px;
+                                            }
+                                             section.thefirm img.visible-mobile {
+                                                width: 50px;
+                                                height: 50px;
+                                             }
+                                            .text-center {
+                                                text-align: left;
+                                            }
+                                            .profile-header .text-center {
+                                                text-align: center;
                                             }
                                             /*
                                             footer .contact .content {
@@ -1063,7 +1085,7 @@ section.contactus .focus .border {
 
 
     /* --- _FONT-SIZES ------------ MEDIUM or larger --- */
-    body, .form-group label {
+    body {
         font-size: 18px;
     }
     /* --- --- --- */
@@ -1078,10 +1100,6 @@ section.contactus .focus .border {
     p.smaller, span.smaller, .smaller p, span.location {
         font-size: 0.86em;
         margin-bottom: 0;
-    }
-    .form-group label {
-        font-weight: 300;
-        font-size: 0.8em;
     }
     .telephone .caption {
         color: #00cccc;
@@ -1099,7 +1117,7 @@ section.contactus .focus .border {
         font-size: 24px;
     }
     my-telephone p.large {
-        font-size: 26px;
+        font-size: 23px;
     }
     footer {
         font-size: 14px;
@@ -1699,7 +1717,7 @@ section.contactus .focus .border {
             }
 
             .nav > li > a {
-                padding: 10px;
+                padding: 10px 9px;
             }
             footer nav > ul > li > a, footer nav > ul > li > a:focus {
                 font-size: 14px;
