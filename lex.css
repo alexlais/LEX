@@ -943,7 +943,8 @@ section.locations .highlight, .headline.background {
                                                 margin: 0;
                                             }
                                             .headline.background .caption {
-                                                line-height: 1.2;
+                                                line-height: 1.6;
+                                                font-weight: 300;
                                             }
                                             .headline.background .cta a {
                                                 color: white;
@@ -986,16 +987,17 @@ section.locations .highlight, .headline.background {
                                                 padding-bottom: 2rem;
                                                 margin-bottom: 2rem;
                                             }
+                                            
+                                        }
+
+                                        /* === MOBILE ONLY ============ XSMALL ================ */
+                                        @media only screen and (max-width : 480px) {
                                             .headline.background {
                                                 padding-left: 10% !important;
                                                 padding-right: 10% !important;
                                                 text-align: center !important;
                                             }
-                                            
                                         }
-
-                                        /* === MOBILE ONLY ============ XSMALL ================ */
-                                        @media only screen and (max-width : 480px) {}
 
                                         /* === Retina ========================================= */
                                         @media only screen and (max-width : 320px) {
@@ -1279,7 +1281,7 @@ section.locations .highlight, .headline.background {
     }
     .headline.background.investment {
         background-image: url("assets/images/headline-investment.png");
-        background-position: left bottom;
+        background-position: left center;
         text-align: right !important;
         /*
         background-attachment: fixed;
@@ -1295,6 +1297,7 @@ section.locations .highlight, .headline.background {
 
     .headline.background .caption, .headline.background .subcaption {
         color: white;
+        line-height: 1.6;
     }
         
     /* _CTA ---------------------  */
