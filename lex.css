@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant:300|Exo+2:200,400|Heebo:300|Khula:300|Palanquin:100,400|Work+Sans:200,300,400|Titillium+Web:200,300,400');
 
-body, .telephone p, button, input, optgroup, select, textarea {
+body, button, input, optgroup, select, textarea {
     font-family: 'Work Sans', Helvetica, Arial, sans-serif;
     font-weight: 200;
 }
@@ -426,7 +426,6 @@ my-telephone p.large {
     background-size: 20px;
     color: black;
     font-size: 0.8em;
-    color: black;
     display: inline-block;
 }
 
@@ -1176,7 +1175,7 @@ section.contactus .focus .border {
         color: #999;
     }
     h2.caption {
-        padding-bottom: 0;
+        padding: 2rem 0;
         margin-bottom: 0;
     }
     .headline .subcaption {
@@ -1217,22 +1216,22 @@ section.contactus .focus .border {
         /* background-attachment: fixed; */
         color: white;
         background-color: #222;
-        border-top: 10px solid white;
+        border-bottom: 10px solid white;
     }
     .headline.background.realestate {
         background-image: url("assets/images/headline-realestate.jpeg");
         background-position: right bottom;
         text-align: left !important;
-        margin-top: 0;
     }
     .headline.background.investment {
-        background-image: url("assets/images/headline-investment.jpg");
+        background-image: url("assets/images/headline-investment.png");
         background-position: left bottom;
         text-align: right !important;
+        /*
         background-attachment: fixed;
-
         box-shadow: inset 0 -30px 30px -30px rgba(0,0,0,1),
                     inset 0 30px 30px -30px rgba(0,0,0,1);
+        */
     }
     .headline.background.business {
         background-image: url("assets/images/headline-business.jpg");
@@ -1273,8 +1272,14 @@ section.contactus .focus .border {
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: .15;
+        opacity: .5;
         z-index: -1;
+    }
+    section.promocall p.caption,  section.promocall h2,  section.promocall h4 {
+        color: black;
+    }
+    section.promocall .focus {
+        background: rgba(255, 255, 255, 0.6);
     }
     /* , .col-no-padding + div h2 */
     /* --- --- --- */
@@ -1301,9 +1306,6 @@ section.contactus .focus .border {
     .focus {
         background: rgba(45, 57, 57, 0.05);
         padding-bottom: 1.3em;
-    }
-    .focus.double {
-        background: rgba(45, 57, 57, 0.15);
     }
     /* --- --- --- */
 
@@ -1549,7 +1551,7 @@ section.contactus .focus .border {
         border: 1px solid white;
         border-radius: 5px;
         line-height: 2;
-        color: rgba(255, 128, 0, 0.9); /* ff8000 */
+        color: rgb(255, 128, 0); /* ff8000 */
     }
     .subnav a:hover {
         border-color: rgba(255, 128, 0, 0.7);
