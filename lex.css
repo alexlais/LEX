@@ -474,7 +474,7 @@ section.contactus .focus .border {
                                         @media only screen and (max-width : 768px) {
 
                                             /* --- MOBILE and TABLETS --- */
-                                            .banner video, .headline.nogutter, section.promo, nav.profile-menu li.profile-menu:hover .dropdown-menu {
+                                            .banner video, nav.profile-menu li.profile-menu:hover .dropdown-menu {
                                                 display: none;
                                                 margin: 0;
                                                 padding: 0;
@@ -913,6 +913,47 @@ section.contactus .focus .border {
                                                 padding: 0 !important;
                                                 margin: 0 !important;
                                             }
+
+
+                                            .headline.background {
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                                color: white;
+                                                border-bottom: 10px solid white;
+                                                padding: 50px 15px 60px;
+                                            }
+                                            .headline.background div[class*='col-'], .subcaption {
+                                                padding: 0;
+                                                margin: 0;
+                                            }
+                                            .headline.background .caption {
+                                                line-height: 1.2;
+                                            }
+                                            .headline.background .cta a {
+                                                color: white;
+                                                border: 1px solid white;
+                                                padding: 5px 20px;
+                                            }
+                                            .headline.background.business {
+                                                background-image: url("assets/images/headline-business.jpg");
+                                                background-position: center;
+                                                padding-left: 20%;
+                                                padding-right: 20%;
+                                            }
+                                            .headline.background.investment {
+                                                background-image: url("assets/images/headline-investment.png");
+                                                text-align: right;
+                                                background-position: center right;
+                                                padding-left: 40%;
+                                            }
+                                            .headline.background.realestate {
+                                                background-image: url("assets/images/headline-realestate.jpeg");
+                                                background-position: bottom right;
+                                                text-align: left;
+                                                padding-right: 40%;
+                                                border-bottom: 0;
+                                            }
+
                                         }
 
 
@@ -929,6 +970,12 @@ section.contactus .focus .border {
                                                 padding-bottom: 2rem;
                                                 margin-bottom: 2rem;
                                             }
+                                            .headline.background {
+                                                padding-left: 10% !important;
+                                                padding-right: 10% !important;
+                                                text-align: center !important;
+                                            }
+                                            
                                         }
 
                                         /* === MOBILE ONLY ============ XSMALL ================ */
@@ -981,6 +1028,16 @@ section.contactus .focus .border {
                                             .profile-header .text-center {
                                                 text-align: center;
                                             }
+
+                                            .headline.background {
+                                                padding-left: 15px;
+                                                padding-right: 15px;
+                                                text-align: center;
+                                            }
+                                            .headline.background .text-center p {  
+                                                text-align: center;                                              text-align: center !important;
+                                            }
+
                                             /*
                                             footer .contact .content {
                                                 clear: left;
