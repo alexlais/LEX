@@ -1172,6 +1172,7 @@ section.thefirm .thumb {
         background-attachment: fixed;
         color: white;
         background-color: #222;
+        border-top: 15px solid white;
     }
     .headline.background.realestate {
         background-image: url("assets/images/headline-realestate.jpeg");
@@ -1183,7 +1184,6 @@ section.thefirm .thumb {
         background-image: url("assets/images/headline-investment.jpg");
         background-position: left bottom;
         text-align: right !important;
-        margin-top: 5rem;
     }
     .headline.background.business {
         background-image: url("assets/images/headline-business.jpg");
@@ -1294,7 +1294,7 @@ section.thefirm .thumb {
 
 
     /* --- _PAGES ----------------- MEDIUM or larger --- */
-    section.thefirm, section.practiceareas, section.contactus, section.linksevents, .ourteam .container.description, .contactus, .profile-list {
+    section.home,  section.thefirm, section.practiceareas, section.contactus, section.linksevents, .ourteam .container.description, .contactus, .profile-list {
         margin-bottom: 5rem;
     }
     /* --- _HOME ------------------ MEDIUM or larger --- */
