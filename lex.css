@@ -801,8 +801,6 @@ section.contactus .focus .border {
                                                 background-attachment: scroll !important;
                                             }
                                             .banner.home {
-                                                padding-top: 10px;
-                                                padding-bottom: 10px;
                                                 background-image: url("assets/images/BG-home.png");
                                             }
                                             .banner.home h1 {
