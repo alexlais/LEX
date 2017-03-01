@@ -478,11 +478,11 @@ section.thefirm .thumb {
                                              .mobile-center, .text-center.mobile-center {
                                                 text-align: center;
                                              }
-                                             section.thefirm .focus {
+                                             .focus {
                                                 background: transparent;
                                                 margin-top: 0;
                                              }
-                                             section.thefirm .focus-mobile {
+                                             .focus-mobile {
                                                 background: rgba(45, 57, 57, 0.05);
                                                 padding-bottom: 1em;
                                             }
