@@ -429,6 +429,32 @@ my-telephone p.large {
     display: inline-block;
 }
 
+form {
+}
+.btn-primary {
+    font-size: 18px;
+    padding: 5px 30px;
+    border-radius: 3px;
+    color: #444;
+    background: white;
+    border: 1px solid #999;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.btn-primary:hover {
+    background: #009999;
+    border: 1px solid #009999;
+}
+textarea.form-control, .form-control {
+    border-radius: 3px;
+    border-color: #999;
+}
+.form-control:focus {
+    border-color: #009999;
+}
+.form-control {
+    height: 40px;
+}
 .form-group label {
     font-weight: 300;
     font-size: 0.8em;
@@ -1507,29 +1533,6 @@ section.contactus .focus .border {
     }
     address {
         margin: 0;
-    }
-    form {
-    }
-    .btn-primary {
-        font-size: 18px;
-        padding: 5px 30px;
-        border-radius: 3px;
-        color: #444;
-        background: white;
-        border: 1px solid #ccc;
-        margin-top: 20px;
-        font-weight: 300;
-    }
-    .btn-primary:hover {
-        background: #009999;
-        border: 1px solid #009999;
-    }
-    textarea.form-control, .form-control {
-        border-radius: 3px;
-        border-color: #999;
-    }
-    .form-control {
-        height: 40px;
     }
     section.contactus .container.border-top .smaller {
         margin-top: 1.4em;
