@@ -557,6 +557,10 @@ section.contactus .focus .border {
                                             h2 {
                                                 font-size: 45px;
                                             }
+                                            h2.caption {
+                                                color: black;
+                                                margin-bottom: 0;
+                                            }
                                             h3 {
                                                font-size: 35px;  
                                                color: #739900;
@@ -575,6 +579,9 @@ section.contactus .focus .border {
                                             }
                                             .caption {
                                                 font-size: 23px;
+                                            }
+                                            h2.caption, .background .caption {
+                                                font-size: 27px;
                                             }
 
                                             section.contactus .focus-mobile {
@@ -991,6 +998,9 @@ section.contactus .focus .border {
                                             }
                                             .caption {
                                                 font-size: 16px;                                                
+                                            }
+                                            h2.caption, .background .caption {
+                                                font-size: 21px;                                                
                                             }
                                             .telephone p.large, my-telephone p.large {
                                                 font-size: 18px;
