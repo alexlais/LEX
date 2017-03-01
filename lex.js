@@ -260,7 +260,7 @@
       	var coordinatesFR = {lat: 48.874967, lng: 2.320793};
 
     	var mapUS = new google.maps.Map(document.getElementById('mapUS'), {
-    	  zoom: 15,
+    	  zoom: 12,
     	  scrollwheel: false,
     	  center: coordinatesUS
     	});
@@ -270,7 +270,7 @@
     	});
 
     	var mapFR = new google.maps.Map(document.getElementById('mapFR'), {
-    	  zoom: 13,
+    	  zoom: 12,
     	  scrollwheel: false,
     	  center: coordinatesFR
     	});
