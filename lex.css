@@ -945,6 +945,7 @@ section.locations .highlight, .headline.background {
                                             .headline.background .caption {
                                                 line-height: 1.6;
                                                 font-weight: 300;
+                                                padding-bottom: 1em;
                                             }
                                             .headline.background .cta a {
                                                 color: white;
@@ -992,15 +993,29 @@ section.locations .highlight, .headline.background {
 
                                         /* === MOBILE ONLY ============ XSMALL ================ */
                                         @media only screen and (max-width : 480px) {
-                                            .headline.background {
-                                                padding-left: 10% !important;
-                                                padding-right: 10% !important;
-                                                text-align: center !important;
+                                            .headline.background .caption {
+                                                font-size: 20px;
+                                                line-height: 2;
+                                            }
+                                            .headline.background.business {
+                                                padding-left: 10%;
+                                                padding-right: 10%;
+                                            }
+                                            .headline.background.investment {
+                                                padding-left: 25%;
+                                            }
+                                            .headline.background.realestate {
+                                                padding-right: 25%;
                                             }
                                         }
 
                                         /* === Retina ========================================= */
                                         @media only screen and (max-width : 320px) {
+                                            .headline.background {
+                                                padding-left: 10% !important;
+                                                padding-right: 10% !important;
+                                                text-align: center !important;
+                                            }
                                             cc {
                                                 word-brake: normal;
                                             }
@@ -1009,6 +1024,10 @@ section.locations .highlight, .headline.background {
                                             }
                                             .caption {
                                                 font-size: 16px;                                                
+                                            }
+                                            .headline.background .caption {
+                                                font-size: 20px;
+                                                line-height: 1.5;
                                             }
                                             h2.caption, .background .caption {
                                                 font-size: 21px;                                                
