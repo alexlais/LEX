@@ -1188,6 +1188,7 @@ section.thefirm .thumb {
     .headline.background.business {
         background-image: url("assets/images/headline-business.jpg");
         background-position: left center;
+                border-top: 0;
     }
     .headline.background .cta a {
         border: 1px solid white;
