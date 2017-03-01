@@ -809,7 +809,7 @@ section.contactus .focus .border {
                                             .subnav a, .subnav a:hover {
                                                 display: block;
                                                 padding: 15px;
-                                                border-top: 1px dotted rgba(255, 128, 0, 0.3);
+                                                border-top: 1px dotted #ff8000;
                                                 color: #ff8000; /* ff8000 */
                                                 text-transform: uppercase;
                                             }
