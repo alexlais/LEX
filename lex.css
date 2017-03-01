@@ -490,7 +490,7 @@ section.contactus .focus .border {
 
 
 section.locations .highlight, .headline.background {
-    border-bottom: 10px solid white;
+    border-bottom: 6px solid white;
 }
 /* --- DONE ------ DONE ------ DONE -------- DONE ------- DONE -------- DONE -------*/
 
@@ -835,9 +835,6 @@ section.locations .highlight, .headline.background {
                                                 font-size: 25px;
                                                 line-height: 1.1;
                                                 padding: 0;
-                                            }
-                                            .banner.locations {
-                                                background-image: url("assets/images/BG-locationsM.png");
                                             }
                                             .banner.links_events {
                                                 background-position: center top !important;
