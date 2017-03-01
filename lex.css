@@ -1079,8 +1079,8 @@ section.contactus .focus .border {
     }
     .border-bottom {
         border-bottom: 1px solid rgba(0,0,0,0.1);
-        margin-bottom: 3rem;
-        padding-bottom: 3rem;
+        margin-bottom: 2rem;
+        padding-bottom: 4rem;
     }
 
 
@@ -1175,17 +1175,10 @@ section.contactus .focus .border {
         line-height: 1.3;
         color: #999;
     }
-    /*
-    .headline h2.caption {
-	   color: #009999;
-    }
-    .highlight.headline .caption, .highlight.headline .subcaption {
-        color: #ddd;
-    }
-    .highlight.headline,  {
+    h2.caption {
+        padding-bottom: 0;
         margin-bottom: 0;
     }
-    */
     .headline .subcaption {
         padding-bottom: 1.3;
         color: #555;
@@ -1224,6 +1217,7 @@ section.contactus .focus .border {
         /* background-attachment: fixed; */
         color: white;
         background-color: #222;
+        border-top: 10px solid white;
     }
     .headline.background.realestate {
         background-image: url("assets/images/headline-realestate.jpeg");
@@ -1365,7 +1359,7 @@ section.contactus .focus .border {
     }
     /* --- _PRACTICEAREAS --------- MEDIUM or larger --- */
     .practiceareas img {
-        padding-top: 2em;
+        padding-top: 1.95em;
         margin-bottom: -.7em;
     }
     .practiceareas h2 {
