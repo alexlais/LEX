@@ -730,10 +730,11 @@ section.locations .highlight, .headline.background {
                                                 width: 23px;
                                             }
                                             nav .navbar-brand {
+                                                font-size: 20px;
                                                 color: #009999 !important;
                                                 background: white !important;
                                                 font-weight: 400 !important;
-                                                padding: 8px 15px 7px;
+                                                padding: 7px 15px 7px;
                                                 height: auto;
                                                 border-radius: 0;
                                             }                                           
