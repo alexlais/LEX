@@ -136,10 +136,6 @@ h4, h6 {
 h2 {
 	color: #009999;
 }
-.focus h2 {
-    margin-bottom: 2.5rem;
-    margin-top: .5rem;
-}
 .caption {
     margin: 0 0 1em;
 }
@@ -1384,6 +1380,7 @@ section.locations .highlight, .headline.background {
         background-image: url("assets/images/sectionPromo.png");
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: right center;
         content: "";
         position: absolute;
         top: 0;
