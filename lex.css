@@ -943,8 +943,8 @@ section.locations .highlight, .headline.background {
                                                 margin: 0;
                                             }
                                             .headline.background .caption {
+                                                font-size: 26px;
                                                 line-height: 1.6;
-                                                font-weight: 300;
                                                 padding-bottom: 1em;
                                             }
                                             .headline.background .cta a {
@@ -994,8 +994,8 @@ section.locations .highlight, .headline.background {
                                         /* === MOBILE ONLY ============ XSMALL ================ */
                                         @media only screen and (max-width : 480px) {
                                             .headline.background .caption {
-                                                font-size: 20px;
-                                                line-height: 2;
+                                                font-size: 24px;
+                                                line-height: 1.6;
                                             }
                                             .headline.background.business {
                                                 padding-left: 10%;
@@ -1028,6 +1028,7 @@ section.locations .highlight, .headline.background {
                                             .headline.background .caption {
                                                 font-size: 20px;
                                                 line-height: 1.5;
+                                                font-weight: 300;
                                             }
                                             h2.caption, .background .caption {
                                                 font-size: 21px;                                                
