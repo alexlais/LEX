@@ -733,7 +733,7 @@ section.locations .highlight, .headline.background {
                                                 color: #009999 !important;
                                                 background: white !important;
                                                 font-weight: 400 !important;
-                                                padding: 8px 15px;
+                                                padding: 8px 15px 7px;
                                                 height: auto;
                                                 border-radius: 0;
                                             }                                           
@@ -839,6 +839,7 @@ section.locations .highlight, .headline.background {
                                                 font-size: 25px;
                                                 line-height: 1.1;
                                                 padding: 0;
+                                                font-weight: 300;
                                             }
                                             .banner.links_events {
                                                 background-position: center top !important;
