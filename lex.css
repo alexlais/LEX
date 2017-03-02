@@ -1833,9 +1833,6 @@ section.locations .highlight, .headline.background {
             .focus-mobile {
                 background: rgba(45, 57, 57, 0.05);
             }
-            .home .focus-mobile {
-                background: transparent;
-            }
             section.thefirm .container.mobile-center .row {
                 margin-bottom: 0;
             }
@@ -1905,6 +1902,7 @@ section.locations .highlight, .headline.background {
                 }
                 section.home .headline:first-child .caption {
                     font-size: 35px;
+                    margin: 0;
                 }
                 my-telephone p.large {
                     font-size: 32px;
