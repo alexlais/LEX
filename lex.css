@@ -529,6 +529,7 @@ section.locations .highlight, .headline.background {
                                              .focus-mobile {
                                                 background: rgba(45, 57, 57, 0.05);
                                                 padding-bottom: 1em;
+                                                padding-top: 1em;
                                             }
                                             .banner.the_firm h1 {
                                                 font-weight: 300;
@@ -729,13 +730,16 @@ section.locations .highlight, .headline.background {
                                                 width: 23px;
                                             }
                                             nav .navbar-brand {
+                                                color: #009999 !important;
+                                                background: white !important;
+                                                font-weight: 400 !important;
                                                 padding: 8px 15px;
                                                 height: auto;
-                                                font-weight: 600;
                                                 border-radius: 0;
                                             }                                           
                                             .navbar.noscroll .navbar-brand:hover {
                                                 border-bottom: 0;
+                                                color: #00cccc !important;
                                             }
                                             /* --- SUBNAV and FOOTER NAV ----------------- */
                                             footer {
@@ -1913,7 +1917,7 @@ section.locations .highlight, .headline.background {
                 .headline.background .caption {
                     margin-left: 0;
                     margin-right: 0;
-                    font-size: 55px;
+                    font-size: 45px;
                 }
                 .profile-header h1 {
                 	font-size: 60px;
