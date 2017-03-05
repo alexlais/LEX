@@ -14,13 +14,13 @@ body strong, .navbar a strong, h4 strong, h6, section.contactus .field-name {
     font-weight: 400;
 }
 
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) 
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
 { @media {
-    body { 
+    body {
         -webkit-font-smoothing: subpixel-antialiased;
         font-weight: 300 !important;
     }
-    body strong { 
+    body strong {
         font-weight: 400 !important;
     }
     .navbar.noscroll .navbar-nav > li > a, .navbar.noscroll .dropdown-menu > li > a {
@@ -537,17 +537,17 @@ section.locations .highlight, .headline.background {
                                                 display: none;
                                             }
                                              .credits-content.active {
-                                                display: block;                                             
+                                                display: block;
                                             }
                                              .credits-content.active p {
-                                                margin-bottom: 0;                                             
+                                                margin-bottom: 0;
                                             }
                                             /* --- MOBILE and TABLETS --- */
                                             body {
                                                 color: black;
                                                 font-size: 18px;
                                                 padding-top: 35px;
-                                                font-weight: 300;
+                                                font-weight: 400;
                                                 -webkit-font-smoothing: subpixel-antialiased;
                                             }
                                             .navbar a, .subnav a, footer nav, .breadcrumb,
@@ -565,7 +565,7 @@ section.locations .highlight, .headline.background {
                                             }
                                             */
                                             h1, h2, h3, h4, h6 {
-                                                margin: 0 0 0.5em; 
+                                                margin: 0 0 0.5em;
                                             }
                                             h1 {
                                             	font-size: 50px;
@@ -584,17 +584,17 @@ section.locations .highlight, .headline.background {
                                                 margin-bottom: 0;
                                             }
                                             h3 {
-                                               font-size: 35px;  
+                                               font-size: 35px;
                                                color: #739900;
                                             }
                                             h4 {
-                                               font-size: 23px;  
+                                               font-size: 23px;
                                             }
                                             h6 {
-                                               font-size: 18px;  
+                                               font-size: 18px;
                                             }
                                             p.smaller, span.smaller {
-                                               font-size: 0.8em;  
+                                               font-size: 0.8em;
                                             }
                                             .smaller p {
                                                 margin: 0;
@@ -733,7 +733,7 @@ section.locations .highlight, .headline.background {
                                                 padding: 7px 15px 7px;
                                                 height: auto;
                                                 border-radius: 0;
-                                            }                                           
+                                            }
                                             .navbar.noscroll .navbar-brand:hover {
                                                 border-bottom: 0;
                                                 color: #00cccc !important;
@@ -900,7 +900,7 @@ section.locations .highlight, .headline.background {
                                             }
 
                                             /* --- MOBILE and TABLETS --- */
-                                            .disclaimer {        
+                                            .disclaimer {
                                                 padding-top: 1em;
                                             }
                                             .disclaimer.open {
@@ -990,7 +990,7 @@ section.locations .highlight, .headline.background {
                                                 padding-bottom: 2rem;
                                                 margin-bottom: 2rem;
                                             }
-                                            
+
                                         }
 
                                         /* === MOBILE ONLY ============ XSMALL ================ */
@@ -1025,7 +1025,7 @@ section.locations .highlight, .headline.background {
                                                 font-size: 14px;
                                             }
                                             .caption {
-                                                font-size: 16px;                                                
+                                                font-size: 16px;
                                             }
                                             .headline.background .caption {
                                                 font-size: 20px;
@@ -1033,7 +1033,7 @@ section.locations .highlight, .headline.background {
                                                 font-weight: 300;
                                             }
                                             h2.caption, .background .caption {
-                                                font-size: 21px;                                                
+                                                font-size: 24px;
                                             }
                                             .telephone p.large, my-telephone p.large {
                                                 font-size: 18px;
@@ -1077,7 +1077,7 @@ section.locations .highlight, .headline.background {
                                                 padding-right: 15px;
                                                 text-align: center;
                                             }
-                                            .headline.background .text-center p {  
+                                            .headline.background .text-center p {
                                                 text-align: center;                                              text-align: center !important;
                                             }
 
@@ -1238,7 +1238,7 @@ section.locations .highlight, .headline.background {
     }
     .navbar-brand {
         margin-left: -15px;
-        font-size: 17px;        
+        font-size: 17px;
     }
 
     /* -- LINK border -----------------------------------------------------  */
@@ -1321,7 +1321,7 @@ section.locations .highlight, .headline.background {
         color: white;
         line-height: 1.6;
     }
-        
+
     /* _CTA ---------------------  */
     .cta {
         display: block;
@@ -1604,13 +1604,13 @@ section.locations .highlight, .headline.background {
         font-weight: 400;
     }
     .noscroll a, .navbar.noscroll .navbar-nav > li > a, .noscroll .dropdown-menu > li > a {
-        color: white; 
+        color: white;
     }
 
     /* safari fix */
-    @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) 
+    @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
     { @media {
-        .noscroll a, .navbar.noscroll .navbar-nav > li > a, .noscroll .dropdown-menu > li > a { 
+        .noscroll a, .navbar.noscroll .navbar-nav > li > a, .noscroll .dropdown-menu > li > a {
             font-weight: 400 !important;
         }
     }}
